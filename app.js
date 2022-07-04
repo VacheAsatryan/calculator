@@ -1,42 +1,32 @@
  let out = document.getElementById('out');
- let num1,num2;
+ let num1,num2,action;
 
-function plus() {
-    num1 = document.getElementById('n1').value; 
-    num1 = parseInt(num1)
-    num2 = document.getElementById('n2').value;
-    num2 = parseInt(num2)
-    
-    out.innerHTML = num1 + num2;
-   }
+let button = document.getElementById('button')
+ 
 
-   function minus() {
-    num1 = document.getElementById('n1').value; 
-    num1 = parseInt(num1)
-    num2 = document.getElementById('n2').value;
-    num2 = parseInt(num2)
-    
-    out.innerHTML = num1 - num2;
-   }
+function func(){
+num1=document.getElementById('n1').value
+num1=parseInt(num1)
+num2=document.getElementById('n2').value
+num2=parseInt(num2)
+action =document.getElementById('action').value
 
-   function multiply(){
-    num1 = document.getElementById('n1').value; 
-    num1 = parseInt(num1)
-    num2 = document.getElementById('n2').value;
-    num2 = parseInt(num2)
+if(action === `+`){
+    out.innerHTML= num1 + num2
+}else if(action === `-`){
+    out.innerHTML = num1 - num2
+}else if(action === `/`){
+    out.innerHTML = num1 / num2
 
-    out.innerHTML = num1 * num2;
+}else if(action === `*`){
+    out.innerHTML = num1 * num2
 
-   }
-   function divide(){
-    num1 = document.getElementById('n1').value; 
-    num1 = parseInt(num1)
-    num2 = document.getElementById('n2').value;
-    num2 = parseInt(num2)
+}else{
+    alert(`error:no such action!`)
+}
 
-    out.innerHTML = num1 / num2;
 
-   }
+}
 
 
   
