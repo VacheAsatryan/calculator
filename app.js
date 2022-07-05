@@ -10,7 +10,6 @@ plus.addEventListener('click', () => {
     num1 = parseInt(num1);
     num2 = document.getElementById('n2').value;
     num2 = parseInt(num2);
-
     out.innerHTML = num1 + num2;
 });
 minus.addEventListener('click', () => {
@@ -18,7 +17,6 @@ minus.addEventListener('click', () => {
     num1 = parseInt(num1);
     num2 = document.getElementById('n2').value;
     num2 = parseInt(num2);
-
     out.innerHTML = num1 - num2;
 });
 divide.addEventListener('click', () => {
@@ -26,7 +24,6 @@ divide.addEventListener('click', () => {
     num1 = parseInt(num1);
     num2 = document.getElementById('n2').value;
     num2 = parseInt(num2);
-
     out.innerHTML = num1 / num2;
 });
 multiply.addEventListener('click', () => {
@@ -34,7 +31,6 @@ multiply.addEventListener('click', () => {
     num1 = parseInt(num1);
     num2 = document.getElementById('n2').value;
     num2 = parseInt(num2);
-
     out.innerHTML = num1 * num2;
 });
 
