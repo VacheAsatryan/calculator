@@ -1,7 +1,7 @@
 let select;
 let arr = [];
-let calculate = document.getElementById('calculate');
-let result = document.getElementById('result');
+const calculate = document.getElementById('calculate');
+const result = document.getElementById('result');
 
 calculate.addEventListener('click', () => {
   select = document.getElementById('select').value;
