@@ -14,7 +14,8 @@
         "no-console": "off",
         "no-unused-vars":"off",
         "prefer-const":"off",
-        "no-eval":"off"
-        
+        "no-eval":"off",
+        "arrow-parens": "off",
+        "no-undef":"off"
     }
 }
