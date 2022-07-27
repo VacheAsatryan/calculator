@@ -13,14 +13,14 @@ calculate.addEventListener('click', () => {
 });
 
 save.addEventListener('click', () => {
-  fetch('http://localhost:3001/test', {
+  fetch('http://localhost:3002/test', {
     method: 'POST',
     headers: { 'Content-type': 'application/json' },
     body: JSON.stringify({ value: result.innerHTML }),
   }).then(data => console.log(data));
 });
 
-fetch('http://localhost:3001/test', {
+fetch('http://localhost:3002/test', {
   method: 'GET',
 })
   .then(resp => resp.json())
